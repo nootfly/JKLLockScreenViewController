@@ -326,7 +326,7 @@ static const NSTimeInterval LSVShakeAnimationDuration = 0.5f;
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
 
-    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown | UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight;
+    return UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight;
 }
 
 @end
