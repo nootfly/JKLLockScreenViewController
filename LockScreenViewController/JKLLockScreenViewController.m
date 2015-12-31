@@ -36,7 +36,7 @@ static const NSTimeInterval LSVShakeAnimationDuration = 0.5f;
         case LockScreenModeVerification:
         case LockScreenModeNormal: {
             // [일반 모드] Cancel 버튼 감춤
-            [_cancelButton setHidden:YES];
+            [_cancelButton setHidden:NO];
         }
         case LockScreenModeNew: {
             // [신규 모드]
@@ -324,9 +324,9 @@ static const NSTimeInterval LSVShakeAnimationDuration = 0.5f;
     return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
 
-    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown | UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight;
 }
 
 @end
