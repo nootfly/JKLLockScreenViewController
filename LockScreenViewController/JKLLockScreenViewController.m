@@ -318,15 +318,6 @@ static const NSTimeInterval LSVShakeAnimationDuration = 0.5f;
     }
 }
 
-#pragma mark - 
-#pragma mark LockScreenViewController Orientation
-- (BOOL)shouldAutorotate {
-    return YES;
-}
 
-- (NSUInteger)supportedInterfaceOrientations {
-
-    return UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight;
-}
 
 @end
