@@ -26,6 +26,10 @@ typedef NS_ENUM(NSInteger, LockScreenMode) {
 @property (nonatomic, weak) IBOutlet id<JKLLockScreenViewControllerDelegate> delegate;
 @property (nonatomic, weak) IBOutlet id<JKLLockScreenViewControllerDataSource> dataSource;
 
+@property (nonatomic) BOOL isCancelButtonHidden;
+@property (nonatomic, strong) NSString *pinTitle;
+@property (nonatomic, strong) NSString *pinSubtitle;
+
 @end
 
 @protocol JKLLockScreenViewControllerDelegate <NSObject>
