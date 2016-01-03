@@ -40,8 +40,8 @@ static const NSTimeInterval LSVShakeAnimationDuration = 0.5f;
         }
         case LockScreenModeNew: {
             // [신규 모드]
-            [self lsv_updateTitle:NSLocalizedStringFromTable(@"Pincode Title",    @"JKLockScreen", nil)
-                         subtitle:NSLocalizedStringFromTable(@"Pincode Subtitle", @"JKLockScreen", nil)];
+            [self lsv_updateTitle:(self.pinTitle == nil ? NSLocalizedStringFromTable(@"Pincode Title",    @"JKLockScreen", nil): self.pinTitle)
+                         subtitle:(self.pinSubtitle == nil ?NSLocalizedStringFromTable(@"Pincode Subtitle", @"JKLockScreen", nil): self.pinSubtitle)];
 
             break;
         }
